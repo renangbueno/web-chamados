@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar chamado</title>
+    <link rel="stylesheet" href="css/criar_chamado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="criar_chamado">
+        <h1>Criar chamado</h1>
+        <form id="form_criar_chamado">
+        <label for="nome">Nome do usuário:</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+        <label for="seleciona_area">Área:</label>
+        <select id="seleciona_area">
+            <option value="1">Compras</option>
+            <option value="2">Protocolo</option>
+            <option value="3">Administração</option>
+        </select>
+        <label for="seleciona_categoria">Tipo do problema:</label>
+        <select id="seleciona_categoria">
+            <option value="1">Problema equipamento físico</option>
+            <option value="2">Problema em software</option>
+            <option value="3">Problema de rede</option>
+            <option value="4">Outro</option>
+        </select>
+        <label for="outro_problema">Outro problema:</label>
+        <input type="text" id="outro_problema" name="outro_problema" placeholder="Qual o problema?">
+        <label for="prioridade">Prioridade:</label>
+        <select id="prioridade">
+            <option value="1">Baixa</option>
+            <option value="2">Média</option>
+            <option value="3">Alta</option>
+        </select>
+        <label for="descricao">Descrição:</label>
+        <textarea maxlength="600" id="descricao" name="descricao" placeholder="Descreva o problema" required></textarea>
+        <p id="restante"></p>
+        </form>
+        <button id="enviar" type="submit">Enviar</button>
+        <button id="ver_chamado">Ver chamado</button>
+    </div>
+    <div id="ver_chamados" class="ver_chamados" style="display: none; flex-direction: column; align-items: center; justify-content: center;">
+        <h1>Ver chamados</h1>
+        <input type="text" id="nro_chamado" name="nro_chamado" placeholder="Número do chamado">
+        <button id="buscar_chamado">Ver chamado</button>
+        <button id="voltar">Voltar</button>
+    </div>
+    <div id="dados_chamado"></div>
+    <script src="js/criar.js"></script>
+</body>
+</html>
