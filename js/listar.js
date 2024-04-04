@@ -44,7 +44,7 @@ chamados.forEach(function(chamado){
             responsaveis[chamado.num_chamado] = responsavelAleatorio;
             localStorage.setItem('responsaveis', JSON.stringify(responsaveis));
         }
-    }, 10000);
+    }, 15000);
 
     button_exc.addEventListener("click", function(){
         var index = chamados.findIndex(function(c) {
