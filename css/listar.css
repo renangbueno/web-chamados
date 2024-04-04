@@ -1,0 +1,57 @@
+html, body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.tabela_container {
+    display: flex;
+    justify-content: center;
+}
+
+.tabela_container {
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Ajuste conforme necessário */
+}
+
+
+thead, tbody, table, td, th, tr, button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+button{
+    color: #fff;
+    background-color: #000263;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#ver_chamado:hover{
+    background-color: #0400dd;
+}
